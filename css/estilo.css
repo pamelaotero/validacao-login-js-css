@@ -8,7 +8,7 @@ body{
     width: 30%;
 	margin-left: 35%;
     margin-right: 35%;
-    margin-top: 10%;
+    margin-top: 8%;
     padding-left: 12px;
     padding-right: 12px;
     padding-bottom: 20px;
@@ -40,7 +40,7 @@ body{
     cursor: pointer;
 }
 
-.btn-entrar{
+#btn-entrar{
     background-color: darkgreen;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -56,13 +56,13 @@ body{
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.btn-entrar:hover{
+#btn-entrar:hover{
     box-shadow: none;
     cursor: pointer;
     background: linear-gradient(18deg, rgba(93,38,126,1) 0%, rgba(117,67,169,1) 100%);
 }
 
-.btn-cadastrar{
+#btn-cadastrar{
     background: linear-gradient(18deg, rgb(179, 45, 96) 0%, rgba(169,67,102,1) 100%);
     margin-bottom: 10px;
     border-radius: 10px;
@@ -77,7 +77,7 @@ body{
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.btn-cadastrar:hover{
+#btn-cadastrar:hover{
     cursor: pointer;
     background: linear-gradient(18deg, rgba(169,67,102,1) 100%, rgba(93,38,126,1) 0%);
     box-shadow: none;

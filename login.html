@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<!-- doctype define o tipo de documento -->
 <html lang="pt-br">
     <head> 
-        <!-- tag de cabeçalho-->
-        <meta charset="utf-8">
-        
+        <meta charset="utf-8">    
         <link rel="stylesheet" type="text/css" href="css/estilo.css">    
         <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
         <title>Validar Login com JS</title>
@@ -12,44 +9,40 @@
         <script type="text/javascript">
             
             function validacao(){   
-                var formulario = document.forms["form_login"]
-                var email = formulario.email.value
-                var senha = formulario.senha.value
+                var email = document.getElementById("email").value
+                var senha = document.getElementById("senha").value
                 
-                if((email == "xp@gmail.com") && (senha=="bemol99")){
+                var email_padrao = "xp@gmail.com"
+                var senha_padrao = "bemol99"
+
+                if((email == email_padrao) && (senha == senha_padrao)){
                     window.location.href = "http://www.youtube.com"
 
-                }else if ((email != "xp@gmail.com") && (senha != "bemol99")){
+                }else if ((email != email_padrao) && (senha != senha_padrao)){
                     alert("Suas credenciais estão inválidas, tente novamente!")
 
-                }else if(email != "xp@gmail.com"){
+                }else if(email != email_padrao){
                     alert("Seu e-mail não consta em nosso cadastro.")
               
-                }else if(senha != "bemol99"){
+                }else if(senha != senha_padrao){
                     alert("Sua senha está incorreta, tente novamente.")
                 }
-                return false
-                //se a pagina tiver algum erro retorna false e nao sera possivel validar
             }
 
-        </script>
-      
+        </script> 
     </head>
 
     <body>
-        <!--corpo da pagina tudo que quisermos exibir na pagina-->
 
         <div class="container-form">
             <h3>LOGIN</h3>
             <form name = "form_login" onsubmit = "return validacao()">
-                <input type="email" name="email" placeholder="E-mail" required="required" class="input"> <br>
-                <input type="password" name="senha" placeholder="Senha" required="required" class="input"><br>
-                <input type="submit" name="entrar" value="ENTRAR" class="btn-entrar"><br>
-                <input type="submit" name="entrar" value="CADASTRAR" class="btn-cadastrar">
+                <input type="email" id="email" placeholder="E-mail" required="required" class="input"/> <br>
+                <input type="password" id="senha" placeholder="Senha" required="required" class="input"/><br>
+                <input type="button" id="btn-entrar" value="ENTRAR" onclick = "validacao()"><br>
+                <input type="button" id="btn-cadastrar" value="CADASTRAR"/>
             </form>
         </div>
  
     </body>
 </html>
-
-<!--o javascript é baseado em eventos como o focus, submit-->
