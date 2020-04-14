@@ -1,6 +1,5 @@
 body{
     background-image: url("../img/fundo.jpg");
-
 }
 
 .container-form{
@@ -41,7 +40,6 @@ body{
 }
 
 #btn-entrar{
-    background-color: darkgreen;
     margin-bottom: 10px;
     border-radius: 10px;
     border: none;
