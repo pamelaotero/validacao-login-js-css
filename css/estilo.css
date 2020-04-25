@@ -8,17 +8,14 @@ body{
 	margin-left: 35%;
     margin-right: 35%;
     margin-top: 8%;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 20px;
-    padding-top: 20px; 
+    padding: 12px 12px 30px 12px;
     text-align: center;  
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
-.input{
+.campo{
     background-color: #E3E3E3;
     font-size: 17px;
     margin-bottom: 10px;
@@ -29,17 +26,17 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.input:focus{
+.campo:focus{
     outline: none;
     background-color: #FFFFFF;
     border: 1px solid rgb(175, 175, 175);
 }
 
-.input:hover{
+.campo:hover{
     cursor: pointer;
 }
 
-#btn-entrar{
+#btn-entrar, #btn-cadastrar{
     margin-bottom: 10px;
     border-radius: 10px;
     border: none;
@@ -47,11 +44,14 @@ body{
     width: 86%;
     font-size: 17px;
     color: white;
-    margin-top: 10%;
+    margin-top: 4%;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(18deg, rgba(114,67,169,1) 0%, rgba(78,44,154,1) 100%);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+#btn-entrar{
+    background: linear-gradient(18deg, rgba(114,67,169,1) 0%, rgba(78,44,154,1) 100%);
 }
 
 #btn-entrar:hover{
@@ -62,23 +62,16 @@ body{
 
 #btn-cadastrar{
     background: linear-gradient(18deg, rgb(179, 45, 96) 0%, rgba(169,67,102,1) 100%);
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: none;
-    padding: 4.5% 3%;
-    width: 86%;
-    font-size: 17px;
-    color: white;
-    margin-top: 1.6%;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 #btn-cadastrar:hover{
+    box-shadow: none;
     cursor: pointer;
     background: linear-gradient(18deg, rgba(169,67,102,1) 100%, rgba(93,38,126,1) 0%);
-    box-shadow: none;
+}
+
+#btn-cadastrar, #btn-entrar:focus{
+    outline: none;
 }
 
 h3{

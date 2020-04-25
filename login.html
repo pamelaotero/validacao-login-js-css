@@ -2,7 +2,8 @@
 <html lang="pt-br">
     <head> 
         <meta charset="utf-8">    
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">    
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">  
+
         <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
         <title>Validar Login com JS</title>
 
@@ -28,21 +29,20 @@
                     alert("Sua senha está incorreta, tente novamente.")
                 }
             }
-
         </script> 
+        
     </head>
 
     <body>
 
         <div class="container-form">
             <h3>LOGIN</h3>
-            <form name = "form_login" onsubmit = "return validacao()">
-                <input type="email" id="email" placeholder="E-mail" required="required" class="input"/> <br>
-                <input type="password" id="senha" placeholder="Senha" required="required" class="input"/><br>
+            <form>
+                <input type="email" id="email" placeholder="E-mail" class="campo"/> <br>
+                <input type="password" id="senha" placeholder="Senha" class="campo" maxlength="10"/><br>
                 <input type="button" id="btn-entrar" value="ENTRAR" onclick = "validacao()"><br>
-                <input type="button" id="btn-cadastrar" value="CADASTRAR"/>
+                <input type="submit" id="btn-cadastrar" value="CADASTRAR"/>
             </form>
         </div>
- 
     </body>
 </html>
